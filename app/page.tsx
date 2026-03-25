@@ -4,7 +4,7 @@ import ParticleBackground from "@/components/ParticleBackground";
 
 export default function Home() {
   return (
-    <main className="bg-white dark:bg-[#050505] min-h-screen text-black dark:text-white selection:bg-rose-500/30 transition-colors duration-300 relative overflow-hidden">
+    <main className="bg-white dark:bg-[#050505] min-h-screen text-black dark:text-white selection:bg-rose-500/30 transition-colors duration-300 relative overflow-x-hidden">
       <ParticleBackground />
       {/* 
         The ScrollyCanvas component acts as our 500vh container, 
