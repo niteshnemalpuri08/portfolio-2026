@@ -10,6 +10,7 @@ export default function ParticleBackground() {
   const { resolvedTheme } = useTheme();
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     initParticlesEngine(async (engine: any) => {
       await loadSlim(engine);
     }).then(() => {
@@ -25,6 +26,7 @@ export default function ParticleBackground() {
 
   const isDark = resolvedTheme === "dark" || !resolvedTheme;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const options: any = {
     background: {
       color: { value: "transparent" },

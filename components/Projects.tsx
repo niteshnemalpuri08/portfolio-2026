@@ -83,6 +83,7 @@ const projects = [
 ];
 
 export default function Projects() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [selectedProject, setSelectedProject] = useState<any>(null);
 
   return (

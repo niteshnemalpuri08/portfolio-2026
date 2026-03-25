@@ -190,7 +190,7 @@ export default function Resume() {
           className="pt-16 border-t border-white/10 text-center space-y-8"
         >
           <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-black dark:text-white mb-12">
-            Let's Connect<span className="text-rose-500">.</span>
+            Let&apos;s Connect<span className="text-rose-500">.</span>
           </h2>
 
           <ContactForm />

@@ -13,7 +13,7 @@ export default function ContactForm() {
 
     try {
       // Formspree Integration (users will replace YOUR_FORM_ID with their own endpoint)
-      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      const response = await fetch("https://formspree.io/f/xwvwezgn", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -39,7 +39,7 @@ export default function ContactForm() {
     >
       <div className="text-center mb-10">
         <h3 className="text-3xl font-semibold text-black dark:text-white tracking-tight mb-3">Drop a Message</h3>
-        <p className="text-gray-600 dark:text-gray-400 font-light">Whether it's a project idea, collaboration, or just saying hi!</p>
+        <p className="text-gray-600 dark:text-gray-400 font-light">Whether it&apos;s a project idea, collaboration, or just saying hi!</p>
       </div>
 
       <AnimatePresence mode="wait">
@@ -56,7 +56,7 @@ export default function ContactForm() {
               </svg>
             </div>
             <h4 className="text-2xl font-bold text-black dark:text-white mb-2">Message Sent!</h4>
-            <p className="text-gray-600 dark:text-gray-400">Thanks for reaching out, I'll get back to you shortly.</p>
+            <p className="text-gray-600 dark:text-gray-400">Thanks for reaching out, I&apos;ll get back to you shortly.</p>
           </motion.div>
         ) : (
           <motion.form key="form" onSubmit={handleSubmit} className="space-y-6">
@@ -95,7 +95,7 @@ export default function ContactForm() {
                 placeholder="Let's build something amazing together..."
               ></textarea>
             </div>
-            
+
             {status === "error" && (
               <p className="text-red-500 text-sm py-2 px-4 bg-red-500/10 rounded-xl">Oops! Note: Make sure to setup the Formspree ID in ContactForm.tsx.</p>
             )}
