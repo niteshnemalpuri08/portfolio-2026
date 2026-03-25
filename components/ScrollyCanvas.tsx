@@ -85,12 +85,12 @@ export default function ScrollyCanvas() {
   };
 
   return (
-    <div ref={containerRef} className="relative h-[500vh] bg-[#050505]">
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
+    <div ref={containerRef} className="relative h-[500vh] bg-transparent">
+      <div className="sticky top-0 h-screen w-full overflow-hidden bg-transparent">
         {/* Loading State Overlay */}
         {!isLoaded && (
-          <div className="absolute inset-0 z-20 flex items-center justify-center bg-[#050505]">
-            <div className="text-white/50 text-sm tracking-widest uppercase animate-pulse">
+          <div className="absolute inset-0 z-20 flex items-center justify-center bg-transparent">
+            <div className="text-black/50 dark:text-white/50 text-sm tracking-widest uppercase animate-pulse">
               Loading Experience...
             </div>
           </div>
